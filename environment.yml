@@ -15,6 +15,6 @@ dependencies:
   - pip=23.3
   - pyarrow=11.0.0
   - requests=2.31.0
-  - wandb=0.15.12
   - pip:
+      - wandb==0.16.0
       - mlflow==2.7.1

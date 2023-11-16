@@ -5,6 +5,7 @@ channels:
 dependencies:
   - python=3.9
   - jupyterlab=3.6.3
+  - ipython=8.16.1
   - ipywidgets=8.0.3
   - seaborn=0.12.2
   - pandas=2.0.3

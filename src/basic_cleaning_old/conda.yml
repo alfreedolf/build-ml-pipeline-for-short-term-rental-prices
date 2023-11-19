@@ -4,6 +4,5 @@ channels:
   - defaults
 dependencies:
   - pip=23.3
-  - pandas=2.0.3
   - pip:
       - wandb==0.15.2

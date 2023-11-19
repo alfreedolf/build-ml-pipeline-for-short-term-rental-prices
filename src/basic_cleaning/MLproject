@@ -5,18 +5,30 @@ entry_points:
   main:
     parameters:
 
-      parameter1:
-        description: ## ADD DESCRIPTION
+      input_artifact:
+        description: "input artifact to be cleaned" ## ADD DESCRIPTION
         type: string
 
-      parameter2:
-        description: ## ADD DESCRIPTION
+      output_artifact:
+        description: "output artifact to be cleaned" ## ADD DESCRIPTION
         type: string
 
-      parameter3:
-        description: ## ADD DESCRIPTION
+      output_type:
+        description: "output type" ## ADD DESCRIPTION
         type: string
+
+      output_description:
+        description: "output description" ## ADD DESCRIPTION
+        type: string
+
+      min_price:
+        description: "minimum valid price" ## ADD DESCRIPTION
+        type: float
+
+      max_price:
+        description: "maximum valid price" ## ADD DESCRIPTION
+        type: float
 
 
     command: >-
-        python run.py  --parameter1 {parameter1}  --parameter2 {parameter2}  --parameter3 {parameter3} 
+        python run.py  --input_artifact {input_artifact}  --output_artifact {output_artifact}  --output_type {output_type}  --output_description {output_description}  --min_price {min_price}  --max_price {max_price} 

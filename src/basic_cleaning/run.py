@@ -30,7 +30,7 @@ def go(args):
     ######################
     logger.info("downloading artifact...")
     artifact_local_path = run.use_artifact(args.input_artifact).file(root="./artifacts/sample.csv")
-    df = pd.read_csv(artifact_local_path)
+    df = pd.read_csv(artifact_local_path, index_col="id")
 
     # Drop outliers
     logger.info("dropping outliers from artifact...")   
@@ -41,7 +41,7 @@ def go(args):
     # Convert last_review to datetime
     logger.info("converting last_review to datetime...")   
     df["last_review"] = pd.to_datetime(df["last_review"])
-    df.to_csv("clean_sample.csv")
+    df.to_csv("clean_sample.csv", index="id")
 
     # upload output to W&B
     logger.info("upload output to W&B...")   

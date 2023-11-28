@@ -4,7 +4,22 @@ time on various rental platforms. You need to estimate the typical price for a g
 on the price of similar properties. Your company receives new data in bulk every week. The model needs 
 to be retrained with the same cadence, necessitating an end-to-end pipeline that can be reused.
 
-In this project you will build such a pipeline.
+In this project I built such a pipeline.
+
+
+## Links to my project
+Here follows the link to my project submission data
+### Link to my repository fork
+https://github.com/alfreedolf/build-ml-pipeline-for-short-term-rental-prices
+<br>
+Release 1.0.1 is the tag on which the pipeline has successfully tested.
+
+### Link to my wandb project
+This is the project workspace
+https://wandb.ai/alfreedolf/nyc_airbnb?workspace=user-alfreedolf
+where the runs are also listed.
+
+Beyond this line, everything in the readme has been left unchanged as in pre-fork version.
 
 ## Table of contents
 
@@ -48,6 +63,7 @@ cd build-ml-pipeline-for-short-term-rental-prices
 ```
 Commit and push to the repository often while you make progress towards the solution. Remember 
 to add meaningful commit messages.
+
 
 ### Create environment
 Make sure to have conda installed and ready, then create a new environment using the ``environment.yml``

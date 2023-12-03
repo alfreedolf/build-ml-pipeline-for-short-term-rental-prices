@@ -1,23 +1,18 @@
 # Build an ML Pipeline for Short-Term Rental Prices in NYC
-You are working for a property management company renting rooms and properties for short periods of 
-time on various rental platforms. You need to estimate the typical price for a given property based 
-on the price of similar properties. Your company receives new data in bulk every week. The model needs 
+This is an ML pipeline for a property management company renting rooms and properties for short periods of 
+time on various rental platforms. The pipeline needs to estimate the typical price for a given property based 
+on the price of similar properties. The company receives new data in bulk every week. The model needs 
 to be retrained with the same cadence, necessitating an end-to-end pipeline that can be reused.
 
-In this project I built such a pipeline.
 
-
-## Links to my project
-Here follows the link to my project submission data
-### Link to my repository fork
-https://github.com/alfreedolf/build-ml-pipeline-for-short-term-rental-prices
 <br>
-Release 1.0.1 is the tag on which the pipeline has successfully tested.
 
-### Link to my wandb project
+## Wandb project of reference
 This is the project workspace
 https://wandb.ai/alfreedolf/nyc_airbnb?workspace=user-alfreedolf
 where the runs are also listed.
+
+Release 1.0.1 is the tag on which the pipeline has successfully tested.
 
 Beyond this line, everything in the readme has been left unchanged as in pre-fork version.
 

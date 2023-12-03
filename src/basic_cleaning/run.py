@@ -67,43 +67,43 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "--input_artifact",
-        type=str,  ## INSERT TYPE HERE: str, float or int,
-        help="input artifact, before data cleaning",  ## INSERT DESCRIPTION HERE,
+        type=str,
+        help="input artifact, before data cleaning",
         required=True,
     )
 
     parser.add_argument(
         "--output_artifact",
-        type=str,  ## INSERT TYPE HERE: str, float or int,
-        help="output artifact, after data cleaning",  ## INSERT DESCRIPTION HERE,
+        type=str,
+        help="output artifact, after data cleaning",
         required=True,
     )
 
     parser.add_argument(
         "--output_type",
-        type=str,  ## INSERT TYPE HERE: str, float or int,
-        help="type of output artifact",  ## INSERT DESCRIPTION HERE,
+        type=str,
+        help="type of the output artifact",
         required=True,
     )
 
     parser.add_argument(
         "--output_description",
-        type=str,  ## INSERT TYPE HERE: str, float or int,
-        help="decription of the output artifact",  ## INSERT DESCRIPTION HERE,
+        type=str,
+        help="decription of the output artifact",
         required=True,
     )
 
     parser.add_argument(
         "--min_price",
-        type=float,  ## INSERT TYPE HERE: str, float or int,
-        help="minimum rent price to be used as a filter to clean the data",  ## INSERT DESCRIPTION HERE,
+        type=float,
+        help="minimum rent price to filter out input data from outliers",
         required=True,
     )
 
     parser.add_argument(
         "--max_price",
-        type=float,  ## INSERT TYPE HERE: str, float or int,
-        help="maximum rent price to be used as a filter to clean the data",  ## INSERT DESCRIPTION HERE,
+        type=float,
+        help="maximum rent price to filter out input data from outliers",
         required=True,
     )
 

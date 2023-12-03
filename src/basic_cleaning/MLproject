@@ -6,27 +6,27 @@ entry_points:
     parameters:
 
       input_artifact:
-        description: "input artifact to be cleaned" ## ADD DESCRIPTION
+        description: "input artifact, before data cleaning"
         type: string
 
       output_artifact:
-        description: "output artifact to be cleaned" ## ADD DESCRIPTION
+        description: "output artifact, after data cleaning"
         type: string
 
       output_type:
-        description: "output type" ## ADD DESCRIPTION
+        description: "type of the output artifact"
         type: string
 
       output_description:
-        description: "output description" ## ADD DESCRIPTION
+        description: "decription of the output artifact"
         type: string
 
       min_price:
-        description: "minimum valid price" ## ADD DESCRIPTION
+        description: "minimum rent price to filter out input data from outliers"
         type: float
 
       max_price:
-        description: "maximum valid price" ## ADD DESCRIPTION
+        description: "maximum rent price to filter out input data from outliers"
         type: float
 
 

@@ -6,11 +6,11 @@ entry_points:
     parameters:
 
       input_artifact:
-        description: "input artifact, before data cleaning"
+        description: "input data artifact, before cleaning"
         type: string
 
       output_artifact:
-        description: "output artifact, after data cleaning"
+        description: "output data artifact, after cleaning"
         type: string
 
       output_type:

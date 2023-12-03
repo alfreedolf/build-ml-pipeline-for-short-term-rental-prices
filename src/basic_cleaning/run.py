@@ -25,9 +25,6 @@ def go(args):
     # particular version of the artifact
     # artifact_local_path = run.use_artifact(args.input_artifact).file()
 
-    ######################
-    # YOUR CODE HERE     #
-    ######################
     logger.info("downloading artifact...")
     artifact_local_path = run.use_artifact(args.input_artifact).file(root="./artifacts/sample.csv")
     df = pd.read_csv(artifact_local_path, index_col="id")
@@ -68,14 +65,14 @@ if __name__ == "__main__":
     parser.add_argument(
         "--input_artifact",
         type=str,
-        help="input artifact, before data cleaning",
+        help="input data artifact, before cleaning",
         required=True,
     )
 
     parser.add_argument(
         "--output_artifact",
         type=str,
-        help="output artifact, after data cleaning",
+        help="output data artifact, after cleaning",
         required=True,
     )
 
